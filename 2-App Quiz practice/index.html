@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/cfff08cccb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- STARTt QUIZ BUTTON -->
+    <div class="start-btn">
+    <button>Start Quiz</button>
+    </div>
+
+    <!-- INFO BOX -->
+
+    <div class="info-box">
+        <div class="info-box__title">
+            <span>Quiz Rules</span>
+        </div>
+        <div class="info-box__rules-list">
+            <div class="rule">1. You will only have <span>15 seconds</span> per each question</div>
+            <div class="rule">2. Once you select your answer, you can't reselect</div>
+            <div class="rule">3. You can't select any option once time goes off</div>
+            <div class="rule">4. You can't exit the Quiz once you start</div>
+            <div class="rule">5. You'll get the results once finished</div>
+        </div>
+        <div class="button">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- QUIZ SECTION -->
+
+    <div class="quiz-section">
+        <!-- HEADER -->
+        <header>
+            <div class="quiz-section__title">
+                Awesome quiz application
+            </div>
+            <div class="timer">
+                <div class="timer__text">Time left</div>
+                <div class="timer__secs">15</div>
+            </div>
+        </header>
+        <!-- QUESTIONS SECTION -->
+        <section>
+            <div class="question-text">
+                <span>What does HTML stand for?</span>
+            </div>
+            <div class="answer-list">
+                <div class="answer">
+                    <span>Hyper Text Prepocessor</span>
+                    <div class="icon cross"><i class="fa fa-xmark"></i></div>
+                </div>
+                <div class="answer">
+                    <span>Hyper Text Markup Language</span>
+                    <div class="icon tick"><i class="fa fa-check"></i></div>
+                </div>
+                <div class="answer">
+                    <span>Hyper Text Multiple Language</span>
+                    <div class="icon cross"><i class="fa fa-xmark"></i></div>
+                </div>
+                <div class="answer">
+                    <span>Hyper Tool Multi Language</span>
+                    <div class="icon cross"><i class="fa fa-xmark"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="question-total">
+                <span><p>1</p>Of<p>5</p>Questions</span>
+            </div>
+            <button class="next-btn">Next question</button>
+        </footer>
+    </div>
+
+</body>
+</html>

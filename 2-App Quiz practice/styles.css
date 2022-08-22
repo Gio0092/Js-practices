@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    /* FONT WEIGHT */
+
+    --fw-light: 200;
+    --fw-regular: 300;
+    --fw-medium: 400;
+    --fw-semibold: 500;
+    --fw-bold: 600;
+    --fw-extra: 700;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    background-color: blue;
+
+}
+
+.start-btn, 
+.info-box,
+.quiz-section{
+    position: absolute;
+    top: 50%;
+    left:  50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-btn button{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    color: blue;
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+}
+
+.start-btn button:hover{
+    transform: scale(1.05);
+    transition: transform 500ms ease-in-out;
+
+}
+
+.info-box,
+.quiz-section {
+    /* display: none; */
+    width: 540px;
+    background: white;
+    border-radius: 5px;
+}
+
+.info-box .info-box__title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: var(--fw-bold);
+}
+
+.info-box .info-box__rules-list{
+    padding: 15px 35px;
+
+}
+
+.info-box .info-box__rules-list .rule{
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+.info-box .info-box__rules-list .rule span{
+    color: blue;
+    font-weight: var(--fw-bold);
+}
+
+
+.info-box .button{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid lightgray; ;
+}
+
+.info-box .button button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: var(--fw-semibold);
+    cursor: pointer;
+}
+
+.info-box .button .quit{
+    background-color: transparent;
+    color: blue;
+}
+
+.info-box .button .quit:hover, .info-box .button .restart:hover {
+    color: white;
+    background-color: darkblue;
+    border: darkblue;
+}
+
+/* QUIZ SECTION */
+
