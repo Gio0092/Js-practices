@@ -20,6 +20,7 @@ body{
     position: relative;
     height: 100vh;
     background-color: blue;
+    font-weight: var(--fw-medium);
 
 }
 
@@ -50,9 +51,8 @@ body{
 
 }
 
-.info-box,
-.quiz-section {
-    /* display: none; */
+.info-box{
+    display: none;
     width: 540px;
     background: white;
     border-radius: 5px;
@@ -119,4 +119,117 @@ body{
 }
 
 /* QUIZ SECTION */
+
+.quiz-section{
+    width: 550px;
+    background: white;
+    border-radius: 5px;
+}
+
+.quiz-section header{
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+.quiz-section header .quiz-section__title{
+    font-size: 20px;
+    font-weight: var(--fw-bold);
+}
+.quiz-section .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+.quiz-section .timer .timer__text{
+    font-weight: inherit;
+    font-size: 1.1rem;
+    user-select: none;
+}
+
+.quiz-section .timer .timer__time{
+    font-size: 1.15rem;
+    font-weight: var(--fw-semibold);
+    background: #343a40;
+    height: 30px;
+    width: 45px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #343a40;
+    user-select: none;
+}
+
+.quiz-section section{
+    padding: 25px 30px 20px;
+    background: white;
+}
+.quiz-section section .question-text{
+    font-size: 25px;
+    font-weight: var(--fw-bold);
+}
+
+.quiz-section section .answer-list{
+    padding: 20px 0;
+    display: block;
+}
+
+.quiz-section section .answer-list .answer{
+    font-size: 1.1rem;
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-section section .answer-list .answer:hover{
+    color: #009085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+
+.quiz-section section .answer-list .answer .icon{
+    height: 30px;
+    width: 30px;
+    border: 2px solid ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.tick{
+    color: #23903c;
+    border-color: #23903c;
+}
+
+.cross{
+    color: red;
+    border-color: red;
+}
+
+footer{
+    margin-top: -15px;
+}
+
+
 
